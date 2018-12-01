@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-react-shop">
-        <h3>React Shop</h3>
+        <h3><i className="fa fa-tachometer" aria-hidden="true"></i>React Shop</h3>
       </div>
     );
   }

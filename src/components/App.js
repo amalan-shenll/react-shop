@@ -9,6 +9,7 @@ class App extends Component {
       <div className="app-react-shop">
         <Header />
         <LoginModal />
+        <h3><i className="fa fa-tachometer" aria-hidden="true"></i>React Shop</h3>
       </div>
     );
   }

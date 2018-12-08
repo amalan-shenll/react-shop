@@ -53,6 +53,11 @@ class Header extends Component {
               </li>
               <li className="nav-item">
                 <a class="nav-link" href="#">
+                  <i className="fa fa-bell text-success" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a class="nav-link" href="#">
                   <i className="fa fa-heart text-danger" aria-hidden="true"></i>
                 </a>
               </li>

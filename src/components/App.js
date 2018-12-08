@@ -3,13 +3,15 @@ import '../styles/App.scss';
 import Header from './header';
 import LoginModal from './login-modal';
 import FeatureWidgets from './FeatueWidgets';
+import Banner from './Banner';
 
 class App extends Component {
   render() {
     return (
       <div className="app-react-shop">
         <Header />
-        <FeatureWidgets/>
+        <Banner />
+        <FeatureWidgets />
         <LoginModal />
         
       </div>

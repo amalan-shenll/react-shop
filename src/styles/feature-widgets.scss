@@ -1,0 +1,28 @@
+.app-feature-widgets {
+  margin: 10px 0px 10px 0px;
+  .widget {
+    background-color: #e0ebeb;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    .icon-tropy {
+      color: #003366;
+    }
+    .icon-gamepad {
+      color: #009900;
+    }
+    .icon-cutlery {
+      color: #cc0000;
+    }
+    .icon-music {
+      color: #ff9900;
+    }
+    .feature-text{
+      padding: 5px;
+      vertical-align: middle;
+      display: inline-block;
+      font-weight: 700;
+    }
+  }
+}

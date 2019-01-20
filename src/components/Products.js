@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/products.scss';
 import defaultImg from '../images/default.jpg';
+import { Link } from "react-router-dom";
 
 class Products extends Component {
   render() {
@@ -20,9 +21,9 @@ class Products extends Component {
                   <p className="card-text text-justify">
                     This is the example product given for the platform. Which is used to test and modulate.
                   </p>
-                  <a href="#" class="btn btn-success btn-block">
+                  <Link to="/product" class="btn btn-success btn-block">
                     View Details <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

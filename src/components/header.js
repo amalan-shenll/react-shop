@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import shopIcon from '../images/shop.png';
 import { Link } from "react-router-dom";
+import { observer, inject } from 'mobx-react';
 
+@inject('userStore') 
+@observer
 class Header extends Component {
   render() {
     return (
@@ -70,6 +73,11 @@ class Header extends Component {
               <li className="nav-item">
                 <a className="nav-link text-light" href="" data-toggle="modal" data-target="#loginModal">
                   <i className="fa fa-user" aria-hidden="true"></i> Login
+                </a>
+              </li>
+              <li className="nav-item">
+                <a class="nav-link" href="#">
+                  {this.props.userStore.username}
                 </a>
               </li>
             </ul>

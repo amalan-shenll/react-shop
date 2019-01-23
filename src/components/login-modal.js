@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { observer, inject } from 'mobx-react';
 
+@inject('userStore') 
+@observer
 class LoginModal extends Component {
 
   constructor(props) {
@@ -20,6 +23,7 @@ class LoginModal extends Component {
         errorMessage: "Enter Email ID"
       })
     } else {
+      this.props.userStore.setUserEmail(this.state.inputEmail);
       this.setState({
         showLogin: false,
         showOTP: true
